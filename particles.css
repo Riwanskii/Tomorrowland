@@ -1,0 +1,12 @@
+canvas {
+  display: block;
+  vertical-align: bottom;
+} /* ---- particles.js container ---- */
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url(images/tml-winter.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
