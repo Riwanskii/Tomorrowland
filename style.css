@@ -1,0 +1,516 @@
+@font-face {
+    font-family: "tml";
+    src: url("../fonts/Selznick.otf");
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+} 
+html{
+  scroll-behavior: smooth;
+}
+nav{
+  display: flex;
+  height: 80px;
+  width: 100%;
+  background: linear-gradient(45deg, #000000,#133b55 );
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap;
+}
+nav .logo{
+  margin-top: auto;
+  width: 22%;
+}
+nav ul{
+  display: inline-flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+.social{
+  display: inline-flex;
+  align-items: baseline;
+  list-style: none;
+}
+nav ul li{
+  margin: 0 5px;
+}
+nav ul li a{
+  font-family: "tml";
+  font-size: 30px;
+  letter-spacing: 2px;
+  color: #f2f2f2;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+nav ul li a.active,
+nav ul li a:hover{
+  color: #111;
+  background: #fff;
+}
+nav ul .social li a:hover{
+  background: none;
+}
+nav .menu-btn i{
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+input[type="checkbox"]{
+  display: none;
+}
+
+/******Premiere Page*****/
+.backg{
+  background: url(../images/tml-winter.jpg);
+  background-size: cover;
+  height: 110vh;
+  display: flex;
+}
+.accueil img{
+  margin: 2% 0 0 857px;
+}
+.accueil h1{
+  margin-left: 825px;
+  font-family: "tml";
+  font-size: 46px;
+  color: white;
+  letter-spacing: 5px;
+  text-shadow: 0 8px 10px black;
+}
+.hymne{
+  display: inline-block;
+  margin: 0 0.5rem;
+  animation: fadeInLeft; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 3s; /* don't forget to set a duration! */
+  position: relative;
+  top: 400px;
+  right: 1000px;
+}
+.hymne img{
+  position: relative;
+  z-index:  2;
+}
+.hymne a{
+  margin-left: 70%;
+}
+.tt{
+  position: relative;
+  background: white;
+  border-radius: 0 0 20px 20px;
+  padding: 2% 0 2% 1%;
+  margin: 0 91px;
+  bottom: 55px;
+  right: 55px;
+  z-index: 1;
+}
+.collab{
+  display: inline-block;
+  margin: 0 0.5rem;
+
+  animation: fadeInRight; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 3s; /* don't forget to set a duration! */
+  position: relative;
+  bottom: 380px;
+}
+.tnface{
+  position: relative;
+  background: white;
+  border-bottom-left-radius: 20px;
+  margin-right:532px;
+  padding: 6% 0 20px 2%;
+  bottom: 230px;
+}
+.tnface p:first-child{
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+.tnface a{
+  margin-left: 50%;
+}
+
+
+/*****BILLETERIE*****/
+.rect1{
+  display: flex;
+}
+.alpes{
+  margin:0 10% 0 10%;
+  width: 25%;
+  text-align: left;
+
+}
+.alpes p:first-child{
+  text-align: right;
+}
+.alpes p{
+  font-family: "tml";
+  font-size: 46px;
+  letter-spacing: 2px;
+  color: #133b55;
+  font-weight: bold;
+}
+.alpes p span{
+  font-family: "Montserrat";
+  font-size: 15px;
+  color: #202020;
+  font-weight: lighter;
+}
+.alpes p:last-child{
+  text-align: center;
+}
+.titre{
+  width: 75%;
+}
+.titre h2{
+  text-align: left;
+  font-family: "tml";
+  font-size: 46px;
+  letter-spacing: 2px;
+  color: #133b55;
+}
+.titre div:first-child{
+  display: flex;
+  align-items: flex-end;
+}
+.wfe1{
+  width: 90%;
+}
+.wfe1 p{
+      padding: 4%;
+}
+video{
+      width: 100%;
+}
+.unite{
+  display: flex;
+  background: url(../images/winter.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.map1{
+  position: relative;
+}
+.map1 img{
+  position: relative;
+  z-index: 2;
+}
+.map1 iframe{
+    height: 50%;
+    position: absolute;
+    top: 250px;
+    left: 150px;
+    z-index: 1;
+    width: 60%;
+}
+.unite a{
+  text-decoration: none;
+  display: flex;
+  font-family: "tml", sans-serif;
+  font-size: 30px;
+  letter-spacing: 2px;
+  color: #fff;
+  background-color: green;
+  margin-top: 85%;
+  padding: 20px 60px;
+  border-radius: 30px;
+}
+.youtube h2{
+  float: right;
+  font-size: 16px;
+  color: #133b55;
+  background-color: #fff;
+  margin: 22% 20% 0 0;
+  padding: 10px 40px;
+  border: solid #133b55 2px;
+  border-radius: 40px;
+}
+.youtube iframe{
+  float: right;
+  margin-right: 10%;
+  padding: 2%;
+}
+
+/*****LINEUP*****/
+.linup{
+  display: flex;
+  justify-content: space-evenly;
+}
+h2:last-child{
+  text-align: center;
+  font-family: "tml";
+  font-size: 46px;
+  letter-spacing: 2px;
+  color: #133b55;
+}
+.mnst{
+  background: rgba(19, 59, 85, 0.2);
+  text-align: center;
+  padding: 3% 0;
+}
+.mnst h3{
+  font-family: "tml";
+  font-size: 35px;
+  color: #133b55;
+  padding-bottom: 15%;
+}
+.mnst p{
+  font-size: 20px;
+  color: #133b55;
+  padding-bottom: 5%;
+}
+.lotus{
+  background: rgba(19, 59, 85, 0.2);
+  text-align: center;
+  padding: 3% 0;
+}
+.lotus h3{
+  font-family: "tml";
+  font-size: 35px;
+  color: #133b55;
+  padding-bottom: 15%;
+}
+.lotus p{
+  font-size: 20px;
+  color: #133b55;
+  padding-bottom: 5%;
+}
+.free{
+  background: rgba(19, 59, 85, 0.2);
+  text-align: center;
+  padding: 3% 0;
+}
+.free h3{
+  font-family: "tml";
+  font-size: 35px;
+  color: #133b55;
+  padding-bottom: 15%;
+}
+.free p{
+  font-size: 20px;
+  color: #133b55;
+  padding-bottom: 5%;
+}
+footer{
+  display: flex;
+  background: url(../images/footer.jpg);
+  height: 458px;
+  justify-content: space-around;
+}
+.cgu{
+  display: flex;
+  align-items: flex-end;
+  color: #133b55;
+}
+.cgu a{
+  color: #133b55;
+  text-decoration: none;
+  align-items: baseline;
+}
+.cgu li{
+  padding: 0 40px;
+}
+@media (max-width: 1000px){
+  nav{
+    padding: 0 40px 0 50px;
+  }
+}
+@media (max-width: 428px) {
+  nav .menu-btn i{
+    display: block;
+  }
+  #click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+  }
+  nav{
+    width: 100%;
+  }
+  nav .logo{
+    margin-top: 2px;
+    width: 10vh;
+  }
+  nav ul{
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background: red;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+    z-index: 5
+  }
+  #click:checked ~ ul{
+    left: 0;
+  }
+  nav ul li{
+    width: 100%;
+    margin: 40px 0;
+  }
+  nav ul li a{
+    font-family: "Montserrat";
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #click:checked ~ ul li a{
+    margin-left: 0px;
+  }
+  nav ul li a.active,
+  nav ul li a:hover{
+    background: none;
+    color: cyan;
+  }
+  .backg{
+    width: 100%;
+    background-position: center;
+  }
+  .accueil img{
+    margin: 5% 50%;
+  }
+  .accueil h1{
+    margin: 0 35%;
+  }
+  .actus{
+    width: 40%
+  }
+  .hymne{
+    width: 100%;
+    right: 250px;
+    top: 300px;
+  }
+  .tt{
+    width: 207%;
+    padding: 2% 2% 2% 2%;
+  }
+  .hymne img{
+    width: 400px;
+    left: 11px;
+    top: -19px;
+  }
+  .hymne h1{
+    font-size: 17px;
+  }
+  .hymne p, a{
+    font-size: 14px;
+  }
+  .collab{
+    width: 100%;
+    right: 240px;
+    top: 280px;
+  }
+  .collab img{
+    width: 400px;
+  }
+  .collab p, a{
+    font-size: 10px;
+  }
+  .tnface{
+    padding: 0 7px 30px 4px;
+    width: 90%;
+    right: 10px;
+    top: -159px;
+  }
+  .rect1{
+    width: 100%;
+    margin-top: 35%;
+  }
+  .alpes p{
+    text-align: right !important;
+    margin-bottom: 50%;
+  }
+  .wfe1{
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .wfe1 p{
+    font-size: 13px;
+  }
+  .unite{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  .unite a{
+    margin: 0;
+  }
+  .map1 iframe{
+    width: 50%;
+    height: 50%;
+    top: 125px;
+    left: 105px;
+  }
+  .map1 img{
+    width: 400px;
+  }
+  .youtube {
+    width: 100%;
+    margin-left: 15%;    
+  }
+  .youtube h2{
+    display: flex;
+    text-align: center;
+  }
+  h2:last-child{
+    margin-top: 10%;
+  }
+  .youtube iframe{
+    width: 95%;
+  }
+  .linup{
+    margin-top: 10%;
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+  footer{
+    width: 100%;
+    background-position: center;
+  }
+  .cgu{
+    margin: 40% 23% 0% -15%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  .cgu li{
+    font-weight: bold;
+    color: black;
+  }
+  .arrow-btn{
+
+  position: fixed;
+  bottom: 30px;
+  right: 40px;
+  z-index: 9;
+  }
+  .arrow-btn a{
+    height: 39px;
+    width: 37px;
+    text-align: center;
+    background: #202020;
+    display: block;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  .arrow-btn a span{
+    color: #fff;
+    line-height: 39px;
+    font-size: 25px;
+  }
+}
